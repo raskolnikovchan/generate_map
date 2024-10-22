@@ -2,3 +2,4 @@ streamlit==1.39.0
 pandas==2.2.3
 folium==0.17.0
 googlemaps==4.10.0
+openpyxl
