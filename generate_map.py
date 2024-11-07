@@ -24,10 +24,10 @@ def get_lat_lng(address_input:str, gmaps):
 st.title("Generate Map")
 st.write("エクセルファイルを入れて作成してください。")
 with st.form("data_to_map", clear_on_submit=True):
-    title = st.text_input("title")
-    api_key = st.text_input("your api_key")
-    center_loc = st.text_input("address of a center location")
-    file = st.file_uploader("excel file", type="xlsx")
+    title = st.text_input("タイトル")
+    api_key = st.text_input("APIキー")
+    center_loc = st.text_input("中心地の住所")
+    file = st.file_uploader("エクセルファイル", type="xlsx")
     excel_submit = st.form_submit_button("マップを作成する")
 
     if excel_submit:
